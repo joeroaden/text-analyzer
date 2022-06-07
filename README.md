@@ -73,3 +73,11 @@ Describe: numberOfOccurrencesInText()
   numberOfOccurrencesInText(word, text);
   Expected Output: 3  
 
+
+Describe: badWordsNotGood()
+  Test: "It should omit the following bad words: zoinks, muppeteer, biffaroni, and loopdaloop"
+  Code:
+  const text = "zoinks, muppeteer, biffaroni, loopdaloop";
+  const word = "loopdaloop", "zoinks", "muppeteer", "biffaroni";
+  badWordsNotGood(word, text);
+  Expected Output: ""

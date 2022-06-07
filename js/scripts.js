@@ -29,3 +29,19 @@ function numberOfOccurrencesInText(word, text) {
   });
   return wordCount;
 }
+
+ function badWordsNotGood(word, text) {
+  let badWordArray = text.split(" ");
+   badWordArray.forEach(function(element) {
+     if (element.toLowerCase().includes(word.toLowerCase())) {
+       return badWordArray.filter(word);
+     }
+   });
+   
+}
+
+const word = "zoinks";
+const text = "you little zoinks"
+
+badWordsNotGood(word, text);
+
